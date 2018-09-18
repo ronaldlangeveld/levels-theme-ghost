@@ -13,8 +13,6 @@ Even better, fork it and use it as a base to make your own theme with your own s
 
 It uses jquery for a few things and [Bulma](https://bulma.io) to help keep it responsive, etc.
 
-Peace
-
 But seriously, check out [Pieter Levels](https://levels.io) for the real deal.. and give him a [follow](https://twitter.com/levelsio) while you're at it.
 
 And here's my [personal blog](https://ronaldlangeveld.com)..  I don't use this theme myself though. 
