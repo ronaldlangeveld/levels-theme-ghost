@@ -1,0 +1,81 @@
+{{!< default}}
+
+<main id="content">
+
+{{!-- <header class="masthead" style="background-image: url({{@blog.cover_image}})">
+     <div class="overlay"></div>
+<section class="hero is-transparent">
+  <div class="hero-body">
+    <div class="container">
+{{#tag}}
+<h1 class="has-text-centered">{{name}}</h1>
+{{/tag}}
+
+    </div>
+  </div>
+</section>
+
+</header> --}}
+
+  <section class="twitter">
+<header class="masthead5" style="background-image: url({{@blog.cover_image}})">
+     <div class="overlay5"></div>
+<section class="hero is-transparent">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="has-text-centered">
+        {{#if @blog.logo}}
+<img class="logo" src="{{@blog.logo}}" alt="">
+{{else}}
+<h1 class="title is-1 has-text-white">{{@blog.title}}</h1>
+{{/if}}
+                <ul class="is-size-6">
+{{navigation}}
+</ul>
+      </div>
+
+<br>
+{{#tag}}
+<h1 class="has-text-centered title is-1 has-text-white">{{name}}</h1>
+{{/tag}}
+    </div>
+  </div>
+</section>
+</header>
+</section>
+
+   {{#foreach posts}}
+   <a href="{{url}}">
+<header class="masthead2" style="background-image: url({{img_url feature_image}})">
+     <div class="overlay2"></div>
+<section class="hero is-transparent is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+<div class="columns is-centered">
+
+
+<div class="column is-half has-text-centered">
+<br>
+
+<p class="has-text-centered subtitle has-text-white"><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></p>
+<h1 class="title is-1 has-text-white"><a class="has-text-white"><a href="{{url}}" class="has-text-white">{{title}}</a></h1>
+
+
+</div>
+
+
+</div>
+    </div>
+  </div>
+</section>
+
+</header>
+</a>
+{{/foreach}}
+
+
+
+
+
+    </main>

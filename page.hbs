@@ -1,0 +1,91 @@
+{{!< default}}
+
+
+
+{{#post}}
+
+  <section class="twitter">
+<header class="masthead5" style="background-image: url({{@blog.cover_image}})">
+     <div class="overlay5"></div>
+<section class="hero is-transparent">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="has-text-centered">
+        <br>
+        {{#if @blog.logo}}
+<a href="/"><img class="logo" src="{{@blog.logo}}" alt=""></a>
+{{else}}
+<a href="/" class="title is-1 has-text-white"><h1 class="title is-1 has-text-white">{{@blog.title}}</h1></a>
+{{/if}}
+<br>
+<h1 class="subtitle has-text-white has-text-centered">{{@blog.description}}</h1>
+      </div>
+
+<br>
+
+
+    </div>
+  </div>
+</section>
+</header>
+</section>
+              
+<article class="{{post_class}}">
+
+  <header class="post-header">
+     <div class="container has-text-centered">
+
+{{!-- <div class="subtitle is-6 has-text-weight-bold">
+                   <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+        {{date format="DD MMMM YYYY"}}
+      </time>
+</div> --}}
+      <br>
+    {{!-- <h1 class="post-title title is-1 has-text-weight-bold">{{title}}</h1> --}}
+    <br>
+    </div>
+
+  </header>
+  <section class="container">
+<div class="columns is-centered">
+
+<div class="column is-three-fifths">
+
+  <div class="content is-large has-text-justified">
+    <h1 class="has-text-centered title is-1">{{title}}</h1>
+   
+          {{content}}
+  </div>
+
+</div>
+
+</div>
+  </section>     
+</article>
+<br>
+<br>
+
+
+
+
+{{/post}} 
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <div class="has-text-centered">
+              <h2 class="subtitle">
+                        <ul>
+{{navigation}}
+</ul>
+<br>
+      </h2>
+<h1 class="title is-5 has-text-white"><a href="/">© {{@blog.title}}</a></h1>
+
+
+      </div>
+
+    </div>
+  </div>
+</section>

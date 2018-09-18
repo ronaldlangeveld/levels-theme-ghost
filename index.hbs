@@ -1,0 +1,54 @@
+{{!< default}}
+
+<main id="content">
+
+<header class="masthead" style="background-image: url({{@blog.cover_image}})">
+     <div class="overlay"></div>
+<section class="hero is-transparent is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+<div class="columns is-centered">
+
+
+<div class="column is-half has-text-centered">
+{{#if @blog.logo}}
+<img class="logo" src="{{@blog.logo}}" alt="">
+{{else}}
+<h1 class="title is-1 has-text-white">{{@blog.title}}</h1>
+{{/if}}
+</div>
+
+</div>
+
+<div class="columns is-centered">
+
+<div class="column is-two-fifths">
+
+<h1 class="subtitle has-text-white has-text-centered">{{@blog.description}}</h1>
+        <ul class="is-size-6 has-text-centered">
+
+{{navigation}}
+
+</ul>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+</header>
+<div class="post-feed">
+   {{#foreach posts}}
+  {{> "post-card"}}
+{{/foreach}}
+</div>
+
+    </main>

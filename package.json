@@ -1,0 +1,13 @@
+{
+    "name": "ghost-maker-blog",
+    "description": "A theme based on Pieter Level's personal blog. Cheers mate!",
+    "version": "2",
+    "engines": {
+        "ghost": ">=2.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "email": "your@email.here"
+    },
+    "keywords": ["ghost-theme"]
+}

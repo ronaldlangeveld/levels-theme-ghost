@@ -1,0 +1,62 @@
+{{!< default}}
+{{#author}}
+<main id="content">
+
+<header class="masthead" style="background-image: url({{img_url cover_image}})">
+     <div class="overlay"></div>
+<section class="hero is-transparent is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+<div class="columns is-centered">
+
+
+<div class="column is-half has-text-centered">
+{{#if profile_image}}
+<div class="profile-picture push-to-middle" style="background-image: url({{img_url profile_image}})"></div>
+{{else}}
+{{/if}}
+</div>
+
+</div>
+
+<div class="columns is-centered">
+
+<div class="column is-two-fifths">
+<h1 class="title is-1 has-text-white has-text-centered">{{name}}</h1>
+<h1 class="subtitle has-text-white has-text-centered">{{bio}}</h1>
+<div class="has-text-centered">
+        <ul class="is-size-3 has-text-white">
+{{#if twitter}}<li class="navi-text"><a class="has-text-white" href="{{twitter_url}}" target="_blank"><i class="fab fa-twitter"></i></a></li>{{/if}}
+{{#if facebook}}<li class="navi-text"><a class="has-text-white" href="{{facebook_url}}" target="_blank"><i class="fab fa-facebook"></i></a></li>{{/if}}
+{{#if website}}<li class="navi-text"><a class="has-text-white" href="{{website}}" target="_blank"><i class="fas fa-globe"></i></a></li>{{/if}}
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+</header>
+
+
+
+
+
+{{/author}}
+
+
+<div class="post-feed">
+   {{#foreach posts}}
+  {{> "post-card"}}
+{{/foreach}}
+</div>
