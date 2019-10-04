@@ -1,7 +1,5 @@
 Just a little theme I built a few months ago by copying levels.io for fun to learn how making templates with Ghost works.
 
-[Check the demo](https://makerblogtheme.unubo.app/)
-
 Check out [Pieter Levels](https://levels.io) for the real legit one. This is just a blatant, really really bad, rip off - with a few custom things.
 
 It's probably missing a few vital things, so maybe not production ready.
